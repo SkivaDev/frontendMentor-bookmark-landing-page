@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Layout from "../containers/Layout";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <Layout>
+        
+      </Layout>
+    </>
+  );
 }
 
-export default Home
+export default Home;

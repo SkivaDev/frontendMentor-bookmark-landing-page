@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  details[open] img {
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(52%) sepia(43%) saturate(4016%) hue-rotate(326deg) brightness(98%) contrast(99%);
+  }
+
+  div[hidden] {
+    display: none;
+  }
+
+  body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    background-color: theme('colors.white');
+    color: theme('colors.very-dark-blue');
+  }
+
+  body.lock-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  ::selection {
+    background-color: theme('colors.white');
+    color: theme('colors.soft-blue');
+  }
+}
+
+@layer components {
+  .transition-visibility {
+    --transition: 200ms ease-in-out;
+    transition: transform var(--transition), visibility var(--transition), opacity var(--transition);
+  }
+
+  :is(a, button, input, textarea, select, details, summary):focus-visible {
+    outline: theme('colors.soft-blue') solid 0.188rem;
+    outline-offset: 0.188rem;
+  }
+
+  .filter-logo-white {
+    filter: invert(1) brightness(6) hue-rotate(180deg);
+  }
+}
