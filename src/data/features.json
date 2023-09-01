@@ -1,0 +1,28 @@
+{
+  "features": [
+    {
+      "title": "Bookmark in one click",
+      "description": "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
+      "imageUrl": "./src/assets/images/illustration-feature-tab-1.svg",
+      "buttonText": "More info",
+      "width": 53,
+      "height": 53
+    },
+    {
+      "title": "Generación de ficha",
+      "description": "Resumen con palabras claves, puntos claves, resumen y capítulos recomendados para un fácil aprendizaje.",
+      "imageUrl": "./src/assets/images/illustration-feature-tab-2.svg",
+      "buttonText": "More info",
+      "width": 54,
+      "height": 48
+    },
+    {
+      "title": "Tutor virtual",
+      "description": "Crea cuestionarios para facilitar el aprendizaje y responde en base al contenido académico generado.",
+      "imageUrl": "./src/assets/images/illustration-feature-tab-3.svg",
+      "buttonText": "More info",
+      "width": 50,
+      "height": 50
+    }
+  ]
+}
