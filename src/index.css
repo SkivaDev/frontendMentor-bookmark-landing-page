@@ -10,7 +10,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
     vertical-align: baseline;
   }
 
@@ -44,8 +43,8 @@
   }
 
   ::selection {
-    background-color: theme('colors.white');
-    color: theme('colors.soft-blue');
+    background-color: theme('colors.soft-blue');
+    color: theme('colors.white');
   }
 }
 
@@ -62,5 +61,67 @@
 
   .filter-logo-white {
     filter: invert(1) brightness(6) hue-rotate(180deg);
+  }
+
+  .banner-1,
+  .banner-2 {
+    position: relative;
+  }
+
+  .bg-line {
+    background: url("./assets/images/bg-dots.svg") no-repeat left 15.8125rem;
+  }
+
+  .banner-1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-radius: 624.9375rem;
+    bottom: 3%;
+    left: 15%;
+    height: 74%;
+    width: 400%;
+    background-color: theme('colors.soft-blue');
+  }
+
+  .banner-2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-radius: 624.9375rem;
+    top: 26%;
+    right: 15%;
+    height: clamp(9rem, 45vw, 17.375rem);
+    width: 200%;
+    background-color: theme('colors.soft-blue');
+  }
+
+  @media screen and (min-width: 54.4375em) {
+    .banner-1::after {
+      top: 5rem;
+    }
+
+    .banner-2::after {
+      top: 32%;
+      right: 56%;
+    }
+  }
+
+  @media screen and (min-width: 87.5rem) {
+    .banner-1::after {
+      bottom: 0;
+      top: 9rem;
+      left: 12rem;
+      height: 22rem;
+    }
+
+    .banner-2::after {
+      top: 9.6rem;
+      right: 39.6rem;
+      height: 22rem;
+      width: 100vw;
+    }
   }
 }
