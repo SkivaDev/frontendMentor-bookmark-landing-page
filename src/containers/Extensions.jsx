@@ -1,12 +1,19 @@
 import React from "react";
-import Extention from "../components/Extention";
+import ExtensionCard from "../components/ExtensionCard";
+import { extensions } from '../data/extensions.json'
 
 function Extensions() {
   return (
     <div className="flex flex-col items-center justify-center max-w-[73.375rem] mx-auto mt-[6.875rem] px-[1.25rem] gap-[2.875rem] md:px-8">
+
       <ContainerText />
+
       <div className="flex flex-col items-center justify-center w-full md:justify-between lg:items-start md:flex-row gap-16 py-[4.3125rem]">
-        <Extention />
+
+        {extensions.map((extension, i) => (
+          <ExtensionCard {...extension} />
+        ))}
+
       </div>
     </div>
   );
