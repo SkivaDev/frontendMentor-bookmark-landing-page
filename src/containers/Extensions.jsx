@@ -4,14 +4,14 @@ import { extensions } from '../data/extensions.json'
 
 function Extensions() {
   return (
-    <div className="flex flex-col items-center justify-center max-w-[73.375rem] mx-auto mt-[6.875rem] px-[1.25rem] gap-[2.875rem] md:px-8">
+    <div className="flex flex-col items-center justify-center mt-[6.875rem] px-[1.25rem] gap-[2.875rem] md:px-8">
 
       <ContainerText />
 
-      <div className="flex flex-col items-center justify-center w-full md:justify-between lg:items-start md:flex-row gap-16 py-[4.3125rem]">
+      <div className="flex flex-col justify-center w-full lg:items-start md:flex-row md:justify-center gap-[2.0625rem]">
 
         {extensions.map((extension, i) => (
-          <ExtensionCard {...extension} />
+          <ExtensionCard key={i} {...extension} index={i}/>
         ))}
 
       </div>

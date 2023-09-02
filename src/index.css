@@ -117,6 +117,20 @@
     transform: scaleX(1);
   }
 
+  .bg-dots {
+    background: url('./assets//images/bg-dots.svg') no-repeat left 15.5625rem;
+
+  }
+
+  .bg-dots.extension-card-1 {
+    align-self: flex-start;
+  }
+  .bg-dots.extension-card-2 {
+    align-self: center;
+  }
+  .bg-dots.extension-card-3 {
+    align-self: flex-end;
+  }
 
 
   @media screen and (min-width: 54.4375em) {
@@ -127,6 +141,20 @@
     .banner-2::after {
       top: 32%;
       right: 56%;
+    }
+
+    .bg-dots.extension-card-1 {
+      margin-top: 0;
+      align-self: auto;
+
+    }
+    .bg-dots.extension-card-2 {
+      margin-top: 2.6875rem;
+      align-self: auto;
+    }
+    .bg-dots.extension-card-3 {
+      margin-top: 5.375rem;
+      align-self: auto;
     }
   }
 
