@@ -98,6 +98,41 @@
     background-color: theme('colors.soft-blue');
   }
 
+  .border-tab::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.1875rem;
+    border-radius: 0.25rem;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .border-tab.border-selected::after {
+    transform-origin: center;
+    transform: scaleX(1);
+  }
+
+  .bg-dots {
+    background: url('./assets//images/bg-dots.svg') no-repeat left 15.5625rem;
+
+  }
+
+  .bg-dots.extension-card-1 {
+    align-self: flex-start;
+  }
+  .bg-dots.extension-card-2 {
+    align-self: center;
+  }
+  .bg-dots.extension-card-3 {
+    align-self: flex-end;
+  }
+
+
   @media screen and (min-width: 54.4375em) {
     .banner-1::after {
       top: 5rem;
@@ -106,6 +141,20 @@
     .banner-2::after {
       top: 32%;
       right: 56%;
+    }
+
+    .bg-dots.extension-card-1 {
+      margin-top: 0;
+      align-self: auto;
+
+    }
+    .bg-dots.extension-card-2 {
+      margin-top: 2.6875rem;
+      align-self: auto;
+    }
+    .bg-dots.extension-card-3 {
+      margin-top: 5.375rem;
+      align-self: auto;
     }
   }
 
