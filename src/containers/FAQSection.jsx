@@ -8,6 +8,7 @@ function FAQSection() {
 
       <ContainerText />
       <FAQs/>
+      <FAQsButton/>
 
     </section>
   );
@@ -41,6 +42,15 @@ function FAQs() {
         
       })}
     </div>
+  )
+}
+
+
+function FAQsButton () {
+  return (
+    <button type="button" className="p-[.9375rem] border-soft-blue bg-soft-blue text-white rounded-md border-[0.188rem]  py-[0.6558rem] px-[1.5201rem] text-[0.875rem] transition duration-300 hover:bg-white hover:text-soft-blue">
+      More info
+    </button>
   )
 }
 export default FAQSection;
