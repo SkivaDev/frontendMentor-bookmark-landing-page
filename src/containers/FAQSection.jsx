@@ -4,7 +4,7 @@ import { faqs } from '../data/faqs.json';
 
 function FAQSection() {
   return (
-    <section className="flex flex-col items-center justify-center mt-[6.875rem] px-[1.25rem] gap-[2.875rem] md:px-8">
+    <section className="flex flex-col items-center justify-center mt-[6.875rem] mb-[9.3125rem] px-[1.25rem] gap-[2.875rem] md:px-8">
 
       <ContainerText />
       <FAQs/>
