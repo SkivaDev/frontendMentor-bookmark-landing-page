@@ -4,6 +4,7 @@ import HeroSection from "../containers/HeroSection";
 import Features from "../containers/Features";
 import Extensions from "../containers/Extensions";
 import FAQSection from "../containers/FAQSection";
+import FormSection from "../containers/FormSection";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
           <Features/>
           <Extensions/>
           <FAQSection/>
+          <FormSection/>
         </main>
       </Layout>
     </>
