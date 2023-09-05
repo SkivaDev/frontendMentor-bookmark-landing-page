@@ -1,24 +1,24 @@
 {
-  "extensions": [
+  "faqs": [
     {
       "question": "What is Bookmark?",
       "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.",
-      "imageUrl": "./src/assets/images/icon-arrow.svg"
+      "iconUrl": "./src/assets/images/icon-arrow.svg"
     },
     {
-      "title": "How can I request a new browser?",
-      "description": "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros al convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.",
-      "imageUrl": "./src/assets/images/icon-arrow.svg"
+      "question": "How can I request a new browser?",
+      "answer": "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros al convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.",
+      "iconUrl": "./src/assets/images/icon-arrow.svg"
     },
     {
-      "title": "Is there a mobile app?",
-      "description": "Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.",
-      "imageUrl": "./src/assets/images/icon-arrow.svg"
+      "question": "Is there a mobile app?",
+      "answer": "Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.",
+      "iconUrl": "./src/assets/images/icon-arrow.svg"
     },
     {
-      "title": "What about other Chromium browsers?",
-      "description": "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.",
-      "imageUrl": "./src/assets/images/icon-arrow.svg"
+      "question": "What about other Chromium browsers?",
+      "answer": "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.",
+      "iconUrl": "./src/assets/images/icon-arrow.svg"
     }
   ]
 }

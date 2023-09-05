@@ -1,10 +1,13 @@
 import React from "react";
 import FAQCard from "../components/FAQCard";
+import { faqs } from '../data/faqs.json';
 
 function FAQSection() {
   return (
-    <section>
+    <section className="flex flex-col items-center justify-center mt-[6.875rem] px-[1.25rem] gap-[2.875rem] md:px-8">
+
       <ContainerText />
+      <FAQs/>
 
     </section>
   );
@@ -25,9 +28,18 @@ function ContainerText() {
 }
 
 function FAQs() {
+
+  let isLastChild = false;
+
   return (
-    <div>
-      <FAQCard/>
+    <div className="flex flex-col max-w-[32.4375rem] w-full">
+      {faqs.map((faq, i) => {
+
+        (i === faqs.length - 1) ? isLastChild = true : isLastChild = false;
+
+        return <FAQCard key={i} {...faq} isLastChild={isLastChild}/>
+        
+      })}
     </div>
   )
 }
