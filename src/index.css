@@ -138,6 +138,10 @@
   }
 
 
+  .filter-orange {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(43%) saturate(4016%) hue-rotate(326deg) brightness(98%) contrast(99%);
+  }
+
   @media screen and (min-width: 54.4375em) {
     .banner-1::after {
       top: 5rem;
