@@ -3,6 +3,7 @@ import Layout from "../containers/Layout";
 import HeroSection from "../containers/HeroSection";
 import Features from "../containers/Features";
 import Extensions from "../containers/Extensions";
+import FAQSection from "../containers/FAQSection";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
           <HeroSection />
           <Features/>
           <Extensions/>
+          <FAQSection/>
         </main>
       </Layout>
     </>
