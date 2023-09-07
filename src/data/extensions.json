@@ -3,7 +3,7 @@
     {
       "title": "Add to Chrome",
       "description": "Minimum version 62",
-      "imageUrl": "assets/logo-chrome.svg",
+      "imageUrl": "/assets/logo-chrome.svg",
       "buttonText": "Add & Install Extension",
       "width": 53,
       "height": 53
@@ -11,7 +11,7 @@
     {
       "title": "Add to Firefox",
       "description": "Minimum version 55",
-      "imageUrl": "assets/images/logo-firefox.svg",
+      "imageUrl": "/assets/logo-firefox.svg",
       "buttonText": "Add & Install Extension",
       "width": 54,
       "height": 48
@@ -19,7 +19,7 @@
     {
       "title": "Add to Opera",
       "description": "Minimum version 46",
-      "imageUrl": "assets/images/logo-opera.svg",
+      "imageUrl": "/assets/logo-opera.svg",
       "buttonText": "Add & Install Extension",
       "width": 50,
       "height": 50
