@@ -1,4 +1,3 @@
-import React from 'react'
 
 function FAQCard({ question, answer, iconUrl, isLastChild }) {
   return (

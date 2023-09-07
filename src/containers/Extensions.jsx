@@ -1,4 +1,3 @@
-import React from "react";
 import ExtensionCard from "../components/ExtensionCard";
 import { extensions } from '../data/extensions.json'
 
