@@ -1,4 +1,4 @@
-import React from "react";
+
 import FAQCard from "../components/FAQCard";
 import { faqs } from '../data/faqs.json';
 
