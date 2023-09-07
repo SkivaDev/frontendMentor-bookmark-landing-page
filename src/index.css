@@ -1,3 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  details[open] img {
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(52%) sepia(43%) saturate(4016%) hue-rotate(326deg) brightness(98%) contrast(99%);
+  }
+
+  div[hidden] {
+    display: none;
+  }
+
+  body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    background-color: theme('colors.white');
+    color: theme('colors.very-dark-blue');
+  }
+
+  body.lock-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  ::selection {
+    background-color: theme('colors.soft-blue');
+    color: theme('colors.white');
+  }
+}
+
+@layer components {
+  .transition-visibility {
+    --transition: 200ms ease-in-out;
+    transition: transform var(--transition), visibility var(--transition), opacity var(--transition);
+  }
+
+  :is(a, button, input, textarea, select, details, summary):focus-visible {
+    outline: theme('colors.soft-blue') solid 0.188rem;
+    outline-offset: 0.188rem;
+  }
+
+  form :is(a, button, input, textarea, select, details, summary):focus-visible,
+  footer :is(a, button, input, textarea, select, details, summary):focus {
+    outline-color: #fff;
+  }
+
+  .filter-logo-white {
+    filter: invert(1) brightness(6) hue-rotate(180deg);
+  }
+
+  .banner-1,
+  .banner-2 {
+    position: relative;
+  }
+
+  .bg-line {
+    background: url("./assets/images/bg-dots.svg") no-repeat left 15.8125rem;
+  }
+
+  .banner-1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-radius: 624.9375rem;
+    bottom: 3%;
+    left: 15%;
+    height: 74%;
+    width: 400%;
+    background-color: theme('colors.soft-blue');
+  }
+
+  .banner-2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-radius: 624.9375rem;
+    top: 26%;
+    right: 15%;
+    height: clamp(9rem, 45vw, 17.375rem);
+    width: 200%;
+    background-color: theme('colors.soft-blue');
+  }
+
+  .border-tab::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.1875rem;
+    border-radius: 0.25rem;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .border-tab.border-selected::after {
+    transform-origin: center;
+    transform: scaleX(1);
+  }
+
+  .bg-dots {
+    background: url('./assets//images/bg-dots.svg') no-repeat left 15.5625rem;
+
+  }
+
+  .bg-dots.extension-card-1 {
+    align-self: flex-start;
+  }
+  .bg-dots.extension-card-2 {
+    align-self: center;
+  }
+  .bg-dots.extension-card-3 {
+    align-self: flex-end;
+  }
+
+
+  .filter-orange {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(43%) saturate(4016%) hue-rotate(326deg) brightness(98%) contrast(99%);
+  }
+
+  @media screen and (min-width: 54.4375em) {
+    .banner-1::after {
+      top: 5rem;
+    }
+
+    .banner-2::after {
+      top: 32%;
+      right: 56%;
+    }
+
+    .bg-dots.extension-card-1 {
+      margin-top: 0;
+      align-self: auto;
+
+    }
+    .bg-dots.extension-card-2 {
+      margin-top: 2.6875rem;
+      align-self: auto;
+    }
+    .bg-dots.extension-card-3 {
+      margin-top: 5.375rem;
+      align-self: auto;
+    }
+  }
+
+  @media screen and (min-width: 87.5rem) {
+    .banner-1::after {
+      bottom: 0;
+      top: 9rem;
+      left: 12rem;
+      height: 22rem;
+    }
+
+    .banner-2::after {
+      top: 9.6rem;
+      right: 39.6rem;
+      height: 22rem;
+      width: 100vw;
+    }
+  }
+}
